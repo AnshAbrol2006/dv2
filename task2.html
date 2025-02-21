@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="task2.css">
+    
+</head>
+<body>
+    <form id="registrationForm">
+        
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="5" maxlength="50">
+            <div class="error" id="name-error"></div>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="email">BITS Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error" id="email-error"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <div class="error" id="phone-error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="bitsId">BITS ID:</label>
+            <input type="text" id="bitsId" name="bitsId" required>
+            <div class="error" id="bitsId-error"></div>
+        </div>
+
+    
+        <div class="form-group">
+            <label for="hostel">Hostel:</label>
+            <select id="hostel" name="hostel" required>
+                <option value="">Select Hostel</option>
+                <option value="Krishna">Krishna</option>
+                <option value="Vishnu">Vishnu</option>
+                <option value="Gandhi">Gandhi</option>
+                <option value="SR">SR</option>
+                <option value="Ram">Ram</option>
+                <option value="Budh">Budh</option>
+                <option value="Bhagirath">Bhagirath</option>
+            </select>
+            <div class="error" id="hostel-error"></div>
+        </div>
+
+        
+        <div class="form-group">
+            <label>Size:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="size" value="S" required> S</label>
+                <label><input type="radio" name="size" value="M"> M</label>
+                <label><input type="radio" name="size" value="L"> L</label>
+                <label><input type="radio" name="size" value="XL"> XL</label>
+            </div>
+            <div class="error" id="size-error"></div>
+        </div>
+
+    
+        <div class="form-group">
+            <label class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the terms and conditions
+            </label>
+            <div class="error" id="terms-error"></div>
+        </div>
+
+        
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <script src="task2.js"></script>
+    
+</body>
+</html>
